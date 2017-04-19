@@ -1,0 +1,30 @@
+{
+  "name": "promize",
+  "version": "1.0.0",
+  "description": "Promises runner in sequence",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "ava --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samtes/promize.git"
+  },
+  "keywords": [
+    "promise",
+    "promize",
+    "runner"
+  ],
+  "author": "Samuel Weldemariam <sweldemariam@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/samtes/promize/issues"
+  },
+  "homepage": "https://github.com/samtes/promize#readme",
+  "dependencies": {
+    "ava": "^0.19.1"
+  }
+}
