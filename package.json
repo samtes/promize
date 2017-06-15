@@ -4,10 +4,15 @@
   "description": "Promises runner in sequence",
   "main": "index.js",
   "directories": {
-    "doc": "docs"
+    "doc": "docs",
+    "test": "test"
   },
   "scripts": {
-    "test": "ava --verbose"
+    "coverage": "nyc npm run test",
+    "publish": "git push --follow-tags origin master; npm publish",
+    "release": "standard-version",
+    "test": "ava --verbose",
+    "test:watch": "ava --verbose --watch"
   },
   "repository": {
     "type": "git",
@@ -25,6 +30,10 @@
   },
   "homepage": "https://github.com/samtes/promize#readme",
   "dependencies": {
-    "ava": "^0.19.1"
+    "ava": "^0.19.1",
+    "standard-version": "^4.2.0"
+  },
+  "devDependencies": {
+    "nyc": "^11.0.2"
   }
 }

@@ -1,0 +1,21 @@
+image: node:7
+
+stages:
+  - build
+  - test
+
+cache:
+  paths:
+    - node_modules/
+    - .yarn
+
+build:
+  script:
+    - yarn install
+  stage: build
+
+test:
+  script:
+    - yarn coverage
+  stage: test
+
