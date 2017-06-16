@@ -3,3 +3,8 @@ node_js:
   - "7"
 after_script:
   - npm run coverage
+deploy:
+  provider: script
+  script: scripts/deploy.sh
+  on:
+    branch: feat/3-setup-ci

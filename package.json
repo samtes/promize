@@ -9,7 +9,7 @@
   },
   "scripts": {
     "coverage": "nyc npm run test",
-    "publish": "git push --follow-tags origin master; npm publish",
+    "publish": "git push --follow-tags origin master",
     "release": "standard-version",
     "test": "ava --verbose",
     "test:watch": "ava --verbose --watch"
