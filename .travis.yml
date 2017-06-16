@@ -1,8 +1,3 @@
 language: node_js
 node_js:
   - "7"
-deploy:
-  provider: script
-  script: scripts/deploy.sh
-  on:
-    branch: feat/3-setup-ci

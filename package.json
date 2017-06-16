@@ -9,9 +9,10 @@
   },
   "scripts": {
     "coverage": "nyc npm run test",
+    "lint": "semistandard --verbose | snazzy",
     "publish": "git push --follow-tags origin master",
     "release": "standard-version",
-    "test": "ava --verbose",
+    "test": "npm run lint && ava --verbose",
     "test:watch": "ava --verbose --watch"
   },
   "repository": {
@@ -34,6 +35,9 @@
     "standard-version": "^4.2.0"
   },
   "devDependencies": {
-    "nyc": "^11.0.2"
+    "eslint-config-semistandard": "^11.0.0",
+    "nyc": "^11.0.2",
+    "semistandard": "^11.0.0",
+    "snazzy": "^7.0.0"
   }
 }
