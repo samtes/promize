@@ -1,5 +1,4 @@
-[![build status](https://gitlab.com/samtes/promize/badges/master/build.svg)](https://gitlab.com/samtes/promize/commits/master)
-[![coverage report](https://gitlab.com/samtes/promize/badges/master/coverage.svg)](https://gitlab.com/samtes/promize/commits/master)
+[![Build Status](https://travis-ci.org/samtes/promize.svg?branch=master)](https://travis-ci.org/samtes/promize)
 # Promize
 This is a promises sequence runner. It will e used to run multiple promise based functions in sequence. 
 
