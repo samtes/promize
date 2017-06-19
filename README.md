@@ -1,21 +1,22 @@
-[![Build Status](https://travis-ci.org/samtes/promize.svg?branch=master)](https://travis-ci.org/samtes/promize)
-# Promize
-This is a promises sequence runner. It will e used to run multiple promise based functions in sequence. 
+[![Build Status](https://travis-ci.org/samtes/promiss.svg?branch=master)](https://travis-ci.org/samtes/promiss)
+# Promiss
+This is a promises sequence runner. It will e used to run multiple promise 
+based functions in sequence.
 
 ## Usage
 ### Installation
 ```javascript
-npm install --save promize
+npm install --save promiss
 ```
 
 ### Usage
-`promize` takes two arguments. 
+`promiss` takes two arguments.
 
 1. `array` of `promises`
 2. [`options`](#Options) to cunstomise response
 
 ```javascript
-const promize = require('promize');
+const promiss = require('promiss');
 
 const foo = () => {
   return Promise((resolve, reject) => {
@@ -41,13 +42,13 @@ const zoo = () => {
 
 // throws the first error rejected
 // same as passing { errors: true } as the second argument
-return promize([foo(), bar(), zoo()]).catch(err => {
+return promiss([foo(), bar(), zoo()]).catch(err => {
   // err.message = 'My heart broke'
   // catches the first error
 });
 
 // collects all errors and resolves at the end with results
-return promize([foo, bar, zoo], { error: false }).then(results => {
+return promiss([foo, bar, zoo], { error: false }).then(results => {
   // result will look like this
   [
     {
@@ -71,4 +72,8 @@ return promize([foo, bar, zoo], { error: false }).then(results => {
 ### Options
 - `errors` takes `boolean` value:
   - `true`: throws the first instance of error (the default behavior)
-  - `false`: collects all the errors and returns array of objects with `name`, `result` and `error`
+  - `false`: collects all the errors and returns array of objects with `index`, 
+  `result` and `error`
+      - `index`: index of the method in the array passed
+      - `result`: result if there is result and `null` if it throws an error
+      - `error`: error if there is error and `null` if there is no error
