@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/samtes/promiss.svg?branch=master)](https://travis-ci.org/samtes/promiss)
 # Promiss
-This is a promises sequence runner. It will e used to run multiple promise 
+This is a promises sequence runner. It will be used to run multiple promise 
 based functions in sequence.
 
 ## Usage
@@ -13,7 +13,7 @@ npm install --save promiss
 `promiss` takes two arguments.
 
 1. `array` of `promises`
-2. [`options`](#Options) to cunstomise response
+2. [`options`](#Options) to customize response
 
 ```javascript
 const promiss = require('promiss');
