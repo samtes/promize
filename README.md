@@ -41,7 +41,7 @@ const zoo = () => {
 
 // throws the first error rejected
 // same as passing { errors: true } as the second argument
-return promize([foo, bar, zoo]).catch(err => {
+return promize([foo(), bar(), zoo()]).catch(err => {
   // err.message = 'My heart broke'
   // catches the first error
 });
@@ -51,17 +51,17 @@ return promize([foo, bar, zoo], { error: false }).then(results => {
   // result will look like this
   [
     {
-      name: foo,
+      index: 0,
       result: 'hello',
       error: null
     },
     {
-      name: bar,
+      index: 1,
       result: null,
       error: Error('My heart broke')
     },
     {
-      name: zoo,
+      index: 3,
       result: 'adios',
       error: null
     }
