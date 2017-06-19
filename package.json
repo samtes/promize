@@ -10,7 +10,6 @@
   "scripts": {
     "coverage": "nyc npm run test",
     "lint": "semistandard --verbose | snazzy",
-    "publish": "git push --follow-tags origin master; npm publish",
     "release": "standard-version",
     "test": "npm run lint && ava --verbose",
     "test:watch": "ava --verbose --watch"

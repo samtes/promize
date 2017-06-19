@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/samtes/promize.svg?branch=master)](https://travis-ci.org/samtes/promiss)
+[![Build Status](https://travis-ci.org/samtes/promiss.svg?branch=master)](https://travis-ci.org/samtes/promiss)
 # Promiss
 This is a promises sequence runner. It will e used to run multiple promise 
 based functions in sequence.
