@@ -31,10 +31,10 @@
   "homepage": "https://github.com/samtes/promiss#readme",
   "dependencies": {
     "async": "^2.4.1",
-    "ava": "^0.19.1",
     "standard-version": "^4.2.0"
   },
   "devDependencies": {
+    "ava": "^0.19.1",
     "eslint-config-semistandard": "^11.0.0",
     "nyc": "^11.0.2",
     "semistandard": "^11.0.0",
