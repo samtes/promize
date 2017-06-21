@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.4"></a>
+## [1.0.4](https://github.com/samtes/promiss/compare/v1.0.3...v1.0.4) (2017-06-21)
+
+
+### Bug Fixes
+
+* move ava to dev dependencies ([a3105ea](https://github.com/samtes/promiss/commit/a3105ea))
+
+
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://github.com/samtes/promiss/compare/v1.0.2...v1.0.3) (2017-06-19)
 

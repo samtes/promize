@@ -1,6 +1,6 @@
 {
   "name": "promiss",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Promises runner in sequence",
   "main": "index.js",
   "directories": {
@@ -11,6 +11,7 @@
     "coverage": "nyc npm run test",
     "lint": "semistandard --verbose | snazzy",
     "release": "standard-version",
+    "publish": "git push --follow-tags origin master; npm publish",
     "test": "npm run lint && ava --verbose",
     "test:watch": "ava --verbose --watch"
   },
